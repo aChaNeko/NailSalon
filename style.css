@@ -149,17 +149,17 @@ header {
 }
 
 .sm-slider li:nth-child(1) span {
-  background-image: url(../Image/image1.jpg);
+  background-image: url(image1.jpg);
   animation-delay: 0s;
 }
 
 .sm-slider li:nth-child(2) span {
-  background-image: url(../Image/image2.jpg);
+  background-image: url(image2.jpg);
   animation-delay: 10s;
 }
 
 .sm-slider li:nth-child(3) span {
-  background-image: url(../Image/image3.jpg);
+  background-image: url(image3.jpg);
   animation-delay: 20s;
 }
 
@@ -200,7 +200,7 @@ header {
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(../Image/hero_copy.png);
+  background-image: url(hero_copy.png);
 }
 
 .main-visual-catch p {
