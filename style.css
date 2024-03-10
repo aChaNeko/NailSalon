@@ -1,6 +1,7 @@
 /* 初期化 */
 html,body {
   margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -16,20 +17,24 @@ header {
 }
 
 .title {
-  background-color: rgba(50,50,50,0);
+  background-color: rgba(5,5,5,0);
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 60px;
-  display: flex;
+  position: relative;
   align-items: center;
   transition: background-color .7s;
+  box-sizing: border-box;
 }
 
 .scroll .title {
-  background-color: rgba(50,50,50,1);
+  background-color: rgba(5,5,5,1);
 }
 
 .title h1 {
   position: absolute;
+  top: 13.5px;
   color: white;
   font-size: 22px;
   margin: 0 0 0 20px;
@@ -47,6 +52,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .gnav-btn-lines {
@@ -201,6 +207,7 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(hero_copy.png);
+  background-position: 50%;
 }
 
 .main-visual-catch p {
@@ -228,13 +235,85 @@ header {
   font-weight: 200;
 }
 
+/* デザインカタログ */
 
-.test1 {
-  height: 600px;
-  background-color: pink;
+#design-catalog {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 40px;
+  position: relative;
 }
 
-.test2 {
-  height: 800px;
-  background-color: skyblue;
+.design-catalog-title {
+  position: relative;
+  width: 100%;
+}
+
+.design-catalog-title h2 {
+  margin: 0;
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+.design-catalog-title span {
+  position: absolute;
+  color: rgba(255,255,255,0.1);
+  text-align: center;
+  width: 100%;
+  top: 30px;
+  transform: rotate(-10deg);
+  font-size: 400%;
+}
+
+.design-catalog-img {
+  width: 80%;
+  padding: 0 10%;
+}
+
+.design-catalog-img img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.design-catalog-img h3 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.view-more {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  display: table;
+  background: #AC9660;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 50px;
+  transform: translateY(10px);
+}
+
+
+/* メニュー */
+#menu {
+  background-color: pink;
+  height: 600px;
+}
+
+/* フォントファミリー */
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 600;
+  font-style: normal;
 }
